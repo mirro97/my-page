@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 @font-face {
   font-family: "Tenada";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2")
@@ -42,20 +42,24 @@ body {
 }
 
 body {
-  font-family: "Pretendard", sans-serif;
-  letter-spacing: -0.4px;
-  font-size: 15px;
-  color: #3a3939;
+  font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  letter-spacing: -0.3px;
+  font-size: 17px;
+  color: #2a2a2a;
   overflow-y: scroll;
   height: 100%;
   background-color: #f2f4f6;
 }
 
-div#root {
-  height: 100%;
+dl,
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 a,
+strong,
 span {
   display: block;
   /* font-family: "Pretendard", sans-serif; */
@@ -73,9 +77,63 @@ button {
   user-select: none;
 }
 
+fieldset,
+img,
+iframe {
+  border: 0 none;
+}
+
+img,
+video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
 select,
 textarea,
 input,
 button {
   font-family: "Pretendard", sans-serif;
+  font-size: 15px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
 }
