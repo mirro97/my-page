@@ -38,6 +38,11 @@ export default function Seo() {
         name="twitter:description"
         content="👋 안녕하세요, 프론트엔드 개발자 강수정입니다 :)"
       />
+
+      <meta
+        name="naver-site-verification"
+        content="f5c66402b0f65888db8c65c41335b47d1f2b2214"
+      />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );

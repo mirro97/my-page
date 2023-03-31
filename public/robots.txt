@@ -1,0 +1,10 @@
+User-agent : *
+Allow:/
+
+User-agent : Yeti
+User-agent : Googlebot
+User-agent : Daumoa
+Allow:/
+
+Sitemap: https://ksj-frontend-dev.web.app/sitemap.xml
+
