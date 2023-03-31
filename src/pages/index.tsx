@@ -508,6 +508,9 @@ export default function Home() {
         <SmallText>Next.js 13.2.4 / React.js 18.2.0 / Tailwind 3.2.7</SmallText>
 
         <SmallText>Front-End Engineer, sujeong.k</SmallText>
+        <LinkText href="https://github.com/mirro97/my-page">
+          📎 Check Code
+        </LinkText>
       </BottomSection>
     </>
   );
