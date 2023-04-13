@@ -160,6 +160,15 @@ export default function Home() {
                   <BigBoldText size="xl">Technical</BigBoldText>
                   <p>React, Redux, Nextjs, firebase, styled-components</p>
                 </TextBox>
+
+                <TextBox>
+                  <BigBoldText size="xl">Portfolio</BigBoldText>
+                  해당 프로젝트는{" "}
+                  <LinkText href="https://www.notion.so/kangsujeong-frontend/5ce52cbbeade41688aa3b7418be6a5e7">
+                    이곳
+                  </LinkText>
+                  에서 확인 가능합니다.
+                </TextBox>
               </ContentBox>
 
               {/* 오라클컴퍼니 3 */}
@@ -194,6 +203,14 @@ export default function Home() {
                   <BigBoldText size="xl">Technical</BigBoldText>
                   <p>React, Redux, Nextjs, styled-components</p>
                 </TextBox>
+                <TextBox>
+                  <BigBoldText size="xl">Portfolio</BigBoldText>
+                  해당 프로젝트는{" "}
+                  <LinkText href="https://www.notion.so/kangsujeong-frontend/704df30513d042af836406cba20b74e7">
+                    이곳
+                  </LinkText>
+                  에서 확인 가능합니다.
+                </TextBox>
               </ContentBox>
             </div>
           </TwoSeperatedBox>
@@ -211,7 +228,9 @@ export default function Home() {
               {/* 오르카소프트 1 */}
               <ContentBox>
                 <TextBox>
-                  <BigBoldText size="xl">관리자 대시보드 개발</BigBoldText>
+                  <BigBoldText size="xl">
+                    백오피스를 개발할 때 사용하게 될 기본 템플릿 페이지 개발
+                  </BigBoldText>
                   <p>
                     관리자 페이지를 개발할 때 사용하게 될 기본 템플릿 페이지
                     개발
@@ -220,7 +239,10 @@ export default function Home() {
                 <TextBox>
                   <BigBoldText size="xl">Work</BigBoldText>
                   <div className="space-y-2">
-                    <p>- Restful Api 를 통해 서버와 통신하여 CRUD 기능 개발</p>
+                    <p>
+                      - Vue.js 와 thymeleaf 로 각각 2가지 버전의 관리자 페이지
+                      개발
+                    </p>
                     <p>- 미디어 쿼리를 사용하여 반응형 웹으로 제작</p>
                     <p>- UX를 고려한 다양한 사용자 편의 제공</p>
                     <p>- 관리자 페이지 thymeleaf와 spring으로 마이그레이션</p>
@@ -248,7 +270,8 @@ export default function Home() {
                   <BigBoldText size="xl">Work</BigBoldText>
                   <div className="space-y-2">
                     <p>
-                      - 식수관리 및 통계 다운로드, 주간 메뉴 업로드 기능 개발
+                      - 식수관리 및 통계 .xlsx 다운로드, 주간 메뉴 업로드 기능
+                      개발
                     </p>
                     <p>- 화면 깜빡임을 최소화하며, UX 개선</p>
                     <p>- restful api 를 통해 서버와 통신하며 CRUD 구현</p>
