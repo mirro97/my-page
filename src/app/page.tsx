@@ -1,8 +1,7 @@
-import { TextList } from "@/components";
+import { TextList, StickyBox } from "@/components";
 import BasicBox from "@/components/Box/BasicBox";
 import ContentBox from "@/components/Box/ContentBox";
 import ImageBox from "@/components/Box/ImageBox";
-import StickyBox from "@/components/Box/StickyBox";
 import TextBox from "@/components/Box/TextBox";
 import TwoSeperatedBox from "@/components/Box/TwoSeperatedBox";
 import BodySection from "@/components/Layout/BodySection";
@@ -55,13 +54,11 @@ export default function Home() {
           </SubHeader>
           {/* # 오라클컴퍼니 */}
           <TwoSeperatedBox>
-            <StickyBox>
-              <Text size="2xl" isBold>
-                오라클 컴퍼니<Point>*</Point>
-              </Text>
-              Frontend Developer / 사원
-              <Text size="sm">2022/02 - 2023/02</Text>
-            </StickyBox>
+            <StickyBox
+              title="오라클 컴퍼니"
+              content="Frontend Developer / 사원"
+              subContent="2022/02 - 2023/02"
+            />
             <div>
               {/* 오라클컴퍼니 1 */}
               <ContentBox>
@@ -205,13 +202,11 @@ export default function Home() {
 
           {/* # 오르카소프트 */}
           <TwoSeperatedBox>
-            <StickyBox>
-              <Text size="2xl" isBold>
-                오르카소프트<Point>*</Point>
-              </Text>
-              Frontend Developer / 인턴
-              <Text size="sm">2021/03 - 2021/12</Text>
-            </StickyBox>
+            <StickyBox
+              title="오르카소프트"
+              content="Frontend Developer / 인턴"
+              subContent="2021/03 - 2021/12"
+            />
             <div>
               {/* 오르카소프트 1 */}
               <ContentBox>
