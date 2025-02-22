@@ -1,3 +1,4 @@
+import { TextList } from "@/components";
 import BasicBox from "@/components/Box/BasicBox";
 import ContentBox from "@/components/Box/ContentBox";
 import ImageBox from "@/components/Box/ImageBox";
@@ -91,15 +92,14 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>- 페이지 기획 및 기능 정의</p>
-                    <p>
-                      - firebase 에 업로드 된 입점 데이터를 가공 및 추출하여 구글 spread sheets에
-                      연결시킴으로 비개발자 직원의 문서작업의 효율을 높임
-                    </p>
-                    <p>- Styled-components 를 사용한 공통 컴포넌트 구축 </p>
-                    <p>- 미디어 쿼리를 활용하여 모든 기기에 최적화된 반응형 페이지 개발</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "페이지 기획 및 기능 정의",
+                      "firebase 에 업로드 된 입점 데이터를 가공 및 추출하여 구글 spread sheets에 연결시킴으로 비개발자 직원의 문서작업의 효율을 높임",
+                      "Styled-components 를 사용한 공통 컴포넌트 구축",
+                      "미디어 쿼리를 활용하여 모든 기기에 최적화된 반응형 페이지 개발",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -130,18 +130,15 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>- 전반적인 컴포넌트 작성 및 프로젝트 셋팅</p>
-                    <p>- react-query 를 사용한 무한 스크롤 적용을 통해 사용자 경험 향상</p>
-                    <p>
-                      - Redux + 카카오 api 를 사용해 현재 위치에 대한 주소 정보 저장 및 위치 데이터
-                      관리
-                    </p>
-                    <p>
-                      - Git branch 를 통해 프로토 타입과 메인 프로덕트를 분리시켜 버전 관리 수행
-                    </p>
-                    <p>- 서비스 기획 및 기능 정의에 함께 참여하여 사용자 UX/UI 개선</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "전반적인 컴포넌트 작성 및 프로젝트 셋팅",
+                      "react-query 를 사용한 무한 스크롤 적용을 통해 사용자 경험 향상",
+                      "Redux + 카카오 api 를 사용해 현재 위치에 대한 주소 정보 저장 및 위치 데이터 관리",
+                      "Git branch 를 통해 프로토 타입과 메인 프로덕트를 분리시켜 버전 관리 수행",
+                      "서비스 기획 및 기능 정의에 함께 참여하여 사용자 UX/UI 개선",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -177,15 +174,14 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>
-                      - 기획팀과 백엔드, 프론트 팀의 주기적인 회의 진행을 통해 기획, 개발의 방향성
-                      제시 및 의견 조율
-                    </p>
-                    <p>- 화면 설계 및 라우팅 구축. 전체적인 프로젝트의 구조를 잡음</p>
-                    <p>- custom hook 공통 모듈을 활용해 효율적인 코드관리를 하고자 함</p>
-                    <p>- 검색, 필터링, 페이지 네비게이션, 로그인 구현</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "기획팀과 백엔드, 프론트 팀의 주기적인 회의 진행을 통해 기획, 개발의 방향성 제시 및 의견 조율",
+                      "화면 설계 및 라우팅 구축. 전체적인 프로젝트의 구조를 잡음",
+                      "custom hook 공통 모듈을 활용해 효율적인 코드관리를 하고자 함",
+                      "검색, 필터링, 페이지 네비게이션, 로그인 구현",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -229,12 +225,14 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>- Vue.js 와 thymeleaf 로 각각 2가지 버전의 관리자 페이지 개발</p>
-                    <p>- 미디어 쿼리를 사용하여 반응형 웹으로 제작</p>
-                    <p>- UX를 고려한 다양한 사용자 편의 제공</p>
-                    <p>- 관리자 페이지 thymeleaf와 spring으로 마이그레이션</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "Vue.js 와 thymeleaf 로 각각 2가지 버전의 관리자 페이지 개발",
+                      "미디어 쿼리를 사용하여 반응형 웹으로 제작",
+                      "UX를 고려한 다양한 사용자 편의 제공",
+                      "관리자 페이지 thymeleaf와 spring으로 마이그레이션",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -259,12 +257,14 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>- 식수관리 및 통계 .xlsx 다운로드, 주간 메뉴 업로드 기능 개발</p>
-                    <p>- 화면 깜빡임을 최소화하며, UX 개선</p>
-                    <p>- restful api 를 통해 서버와 통신하며 CRUD 구현</p>
-                    <p>- Vuex를 사용하여 로그인 상태 관리</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "식수관리 및 통계 .xlsx 다운로드, 주간 메뉴 업로드 기능 개발",
+                      "화면 깜빡임을 최소화하며, UX 개선",
+                      "restful api 를 통해 서버와 통신하며 CRUD 구현",
+                      "Vuex를 사용하여 로그인 상태 관리",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -286,14 +286,14 @@ export default function Home() {
                   <Text size="xl" isBold>
                     Work
                   </Text>
-                  <div className="space-y-2">
-                    <p>- 화면 설계/디자인을 포함한 프론트 단의 기능 개발</p>
-                    <p>
-                      - router-navigation 을 통해 슈퍼관리자와 일반관리자에게 보여지는 화면 통제
-                    </p>
-                    <p>- restful api 를 통해 서버와 통신하며 CRUD 구현</p>
-                    <p>- 학생 성적 데이터와 학생 정보 excel로 다운로드 가능 개발</p>
-                  </div>
+                  <TextList
+                    list={[
+                      "화면 설계/디자인을 포함한 프론트 단의 기능 개발",
+                      "router-navigation 을 통해 슈퍼관리자와 일반관리자에게 보여지는 화면 통제",
+                      "restful api 를 통해 서버와 통신하며 CRUD 구현",
+                      "학생 성적 데이터와 학생 정보 excel 다운로드 기능 개발",
+                    ]}
+                  />
                 </TextBox>
                 <TextBox>
                   <Text size="xl" isBold>
@@ -334,14 +334,13 @@ export default function Home() {
                   </p>
                 </TextBox>
                 <TextBox>
-                  <p>
-                    - recoil 을 사용해 현재 적용된 언어의 상태 관리를 함으로써 영어와 한국어 지원
-                  </p>
-                  <p>
-                    - 웹의 성능을 높이기 위해 react-lazy-load-image-component 라이브러리를 사용해
-                    lazyloading 처리, 트래픽 최소화
-                  </p>
-                  <p>- react-query를 사용해 무한 스크롤 기능 적용</p>
+                  <TextList
+                    list={[
+                      "recoil 을 사용해 현재 적용된 언어의 상태 관리를 함으로써 영어와 한국어 지원",
+                      "웹의 성능을 높이기 위해 react-lazy-load-image-component 라이브러리를 사용해 lazyloading 처리, 트래픽 최소화",
+                      "react-query를 사용해 무한 스크롤 기능 적용",
+                    ]}
+                  />
                 </TextBox>
 
                 <TextBox>
