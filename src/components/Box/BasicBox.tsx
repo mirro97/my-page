@@ -5,5 +5,5 @@ interface IProps {
 }
 
 export default function BasicBox({ children }: IProps) {
-  return <div className="sm:px-5">{children}</div>;
+  return <section className="sm:px-5">{children}</section>;
 }
