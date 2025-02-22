@@ -1,5 +1,9 @@
-import { ContainerProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
 
-export default function BasicBox({ children }: ContainerProps) {
+interface IProps {
+  children: ReactNode;
+}
+
+export default function BasicBox({ children }: IProps) {
   return <div className="sm:px-5">{children}</div>;
 }

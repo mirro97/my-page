@@ -1,5 +1,20 @@
-import { ContainerProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
+import Text from "../Text";
 
-export default function TextBox({ children }: ContainerProps) {
-  return <div className="mb-5 last:mb-0">{children}</div>;
+interface IProps {
+  title?: string;
+  children: ReactNode;
+}
+
+export default function TextBox({ title, children }: IProps) {
+  return (
+    <div className="mb-5 last:mb-0">
+      {title && (
+        <Text size="xl" isBold>
+          {title}
+        </Text>
+      )}
+      {children}
+    </div>
+  );
 }

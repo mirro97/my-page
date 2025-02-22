@@ -1,12 +1,13 @@
-import { LinkTextProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
 
-export default function LinkText({ href, children }: LinkTextProps) {
+interface IProps {
+  children: ReactNode;
+  href: string;
+}
+
+export default function LinkText({ href, children }: IProps) {
   return (
-    <a
-      className="underline inline-block text-orange-500"
-      href={href}
-      target="_blank"
-    >
+    <a className="underline inline-block text-orange-500" href={href} target="_blank">
       {children}
     </a>
   );

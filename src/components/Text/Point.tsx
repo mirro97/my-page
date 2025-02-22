@@ -1,5 +1,9 @@
-import { ContainerProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
 
-export default function Point({ children }: ContainerProps) {
+interface IProps {
+  children: ReactNode;
+}
+
+export default function Point({ children }: IProps) {
   return <strong className="inline-block text-orange-400">{children}</strong>;
 }

@@ -1,6 +1,10 @@
-import { ContainerProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
 
-export default function TopHeader({ children }: ContainerProps) {
+interface IProps {
+  children: ReactNode;
+}
+
+export default function TopHeader({ children }: IProps) {
   return (
     <div className="font-bold sm:text-4xl text-3xl sm:leading-relaxed leading-relaxed">
       {children}
