@@ -1,15 +1,13 @@
-import { TextList, StickyBox } from "@/components";
+import { TextList, StickyBox, TextBox } from "@/components";
 import BasicBox from "@/components/Box/BasicBox";
 import ContentBox from "@/components/Box/ContentBox";
 import ImageBox from "@/components/Box/ImageBox";
-import TextBox from "@/components/Box/TextBox";
 import TwoSeperatedBox from "@/components/Box/TwoSeperatedBox";
 import BodySection from "@/components/Layout/BodySection";
 import BottomSection from "@/components/Layout/BottomSection";
 import TopSection from "@/components/Layout/TopSection";
 import Text from "@/components/Text";
 import LinkText from "@/components/Text/LinkText";
-import Point from "@/components/Text/Point";
 import SubHeader from "@/components/Text/SubHeader";
 import TopHeader from "@/components/Text/TopHeader";
 import Image from "next/image";
@@ -19,9 +17,7 @@ export default function Home() {
     <>
       <TopSection>
         <TopHeader>
-          <Point>&#123;</Point> <br />
-          &nbsp;&nbsp; 안녕하세요, <br /> &nbsp;&nbsp; 프론트엔드 개발자 강수정입니다 :&#41; <br />
-          <Point>&#125;</Point>
+          안녕하세요, <br /> 프론트엔드 개발자 강수정입니다 :&#41;
         </TopHeader>
       </TopSection>
 
@@ -49,9 +45,7 @@ export default function Home() {
 
         {/* 경력 */}
         <BasicBox>
-          <SubHeader>
-            <Point>/</Point> Experience
-          </SubHeader>
+          <SubHeader>Experience</SubHeader>
           {/* # 오라클컴퍼니 */}
           <TwoSeperatedBox>
             <StickyBox
@@ -303,9 +297,7 @@ export default function Home() {
 
         {/* 개인프로젝트 및 경험 */}
         <BasicBox>
-          <SubHeader>
-            <Point>/</Point> Projects & Other Experiences
-          </SubHeader>
+          <SubHeader>Projects & Other Experiences</SubHeader>
           {/* 나만의 포켓몬 도감 */}
           <TwoSeperatedBox>
             <div className="mb-10 ">
@@ -458,9 +450,7 @@ export default function Home() {
 
         {/* 연락처 */}
         <BasicBox>
-          <SubHeader>
-            <Point>/</Point> Contact
-          </SubHeader>
+          <SubHeader>Contact</SubHeader>
           <TwoSeperatedBox>
             <Text size="xl" isBold>
               Github
@@ -483,9 +473,7 @@ export default function Home() {
 
         {/* 학력 */}
         <BasicBox>
-          <SubHeader>
-            <Point>/</Point> Education
-          </SubHeader>
+          <SubHeader>Education</SubHeader>
           <TwoSeperatedBox>
             <Text size="2xl" isBold>
               강원대학교
