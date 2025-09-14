@@ -22,27 +22,111 @@ export default function Home() {
 
       <BasicBox>
         <TextBox>
-          시간/공간에 구애 받지 않고 사람들에게 다가갈 수 있는 웹에 매력을 느껴 개발에 푹 빠지게
-          되었습니다. 이전에는 축제 및 행사 기획 업무를 담당하며 기획, 디자인의 경험을 쌓았습니다.
-          이러한 경험은 디자이너와 협업을 할 때 적극적인 커뮤니케이션을 가능하게 하여 사용자 경험
-          최적화에 도움을 주었습니다. 사용성을 고려한 UI/UX 설계와 기획을 위해 항상 고민하고
-          있습니다.
+          시간과 공간의 제약 없이 사람들에게 가치를 전달할 수 있다는 점에 매력을 느껴 개발자가
+          되었습니다. 현재 3년 차 프론트엔드 개발자로 일하고 있으며, 개발 이전에는 축제 및 행사
+          기획·운영과 디자인 업무를 경험하며 다양한 직무의 사람들과 적극적으로 소통해왔습니다.
+          이러한 다양한 협업 경험을 바탕으로 디자이너를 비롯한 팀원들과의 원활한 커뮤니케이션이
+          가능하며, 사용자 경험을 고려한 UI/UX 설계와 서비스 기획에 강점이 있습니다.
         </TextBox>
         <TextBox>
-          함께 성장하는 것에 관심이 많습니다. 개인 블로그를 운영하고 있으며, React.js 를 공부하며
-          개발한 예제를 직접 테스트해 볼 수 있는 웹 페이지를 호스팅 하기도 했습니다. 현재는 매일
-          40명씩은 꾸준히 방문하는 블로그가 되었습니다.
-        </TextBox>
-        <TextBox>
-          개인적으로 새로운 기술과 도전을 좋아합니다. 이전 프로젝트에서 팀원과 스터디를 운영하며
-          지식을 공유하며 서로의 역량을 향상시켰습니다. 현재는 Typescript 와 Clean Code 를 공부하고
-          있으며 협력하기 좋은 팀원이자, 한사람 이상의 몫을 해낼 수 있는 개발자가 목표입니다.
+          개인적으로 새로운 기술과 도전을 즐기며, 이전 프로젝트에서는 팀원들과 스터디를 운영해
+          지식을 공유하고 함께 성장해왔습니다. 최근에는 ChatGPT, Cursor, Claude 등 다양한 AI 도구를
+          실무에 적극적으로 활용하여 개발 생산성과 코드 품질을 향상시키는 데 집중하고 있습니다.
+          빠르게 변화하는 개발 환경 속에서 새로운 기술을 능동적으로 흡수하고 적용하는 능력을
+          강점으로 삼고 있습니다.
         </TextBox>
       </BasicBox>
 
       {/* 경력 */}
       <BasicBox>
         <SubHeader>Experience</SubHeader>
+        {/* #미스터블루 */}
+        <TwoSeperatedBox>
+          <StickyBox
+            hasTitlePoint
+            title="미스터블루"
+            content="Frontend Developer / 주임연구원"
+            subContent="2023/04 - 재직중"
+          />
+          <div>
+            {/* 미스터블루 1 */}
+            <ContentBox>
+              <TextBox title="미스터블루 서비스 유지보수 및 기능 개선">
+                <p>
+                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 UI 구조 파악 및 신규 기능
+                  유지보수 수행
+                </p>
+              </TextBox>
+              <TextBox title="Work">
+                <TextList
+                  list={[
+                    "신규 사업건 개발(이벤트, 신규 페이지 등) 및 레거시 마이그레이션",
+                    "기능 추가/변경 요청에 대한 영향 범위 분석 및 안정성 확보 중심의 개발 진행",
+                    "기술 문서 작성 및 기획/디자인 팀과의 유연한 커뮤니케이션을 통한 서비스 품질 유지 기여",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <p> React, Next.js, Vue, Nuxt.js, TypeScript</p>
+              </TextBox>
+            </ContentBox>
+            {/* 미스터블루 2 */}
+            <ContentBox>
+              <TextBox title="작품홈 성능 개선 및 UI 구조 재설계">
+                <TextList
+                  list={[
+                    "SSR 환경에서 레거시 코드 기반의 기기 너비 계산 로직으로 발생한 모바일 UI 깨짐 이슈의 근본 원인을 분석 및 제거",
+                    "기존 스켈레톤 강제 노출 방식 대신 CSS 정적 레이아웃 구조로 재설계하여 렌더링 안정성과 유지보수성 개선",
+                    "복잡한 UI 계산 구조 단순화 및 불필요 연산 제거로 Lighthouse 성능 점수 60점에서  99점 상승, 진입 속도 약 1.5초 단축",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <p>Nuxt.js, Vue</p>
+              </TextBox>
+            </ContentBox>
+            {/* 미스터블루 3 */}
+            <ContentBox>
+              <TextBox title="웹소설 플랫폼 CMS/CP 관리자 페이지 개발">
+                <p>신규 웹소설 플랫폼의 CMS/CP 관리자 페이지를 개발했습니다.</p>
+              </TextBox>
+              <TextBox title="Work">
+                <TextList
+                  list={[
+                    "Vite 기반 프로젝트에서 다양한 관리자 기능을 위한 구조 설계 및 컴포넌트 체계 구축",
+                    "복잡한 폼 입력 구조에 대해 조건 기반 필드 노출, 입력값 유효성 검증, 툴팁 및 에러 피드백 등 UX 개선 로직 설계",
+                    "Excel 기반 작품·볼륨 일괄 등록 기능 및 발송 대상자 정보 다운로드 기능 구현 (XLSX 포맷 처리)",
+                    "즉시발송/예약발송 등 다단계 상태 기반 액션 설계 및 조건별 UI 제어 로직 구현",
+                    "상태 관리 및 비동기 데이터 처리 구조 정리를 통해 유지보수성과 기능 확장성 확보",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <p>React, Vite, Ant Design, Zustand, React Query, Axios</p>
+              </TextBox>
+            </ContentBox>
+            {/* 미스터블루 4 */}
+            <ContentBox>
+              <TextBox title="웹소설 플랫폼 신규 개발">
+                <p>신규 웹소설 플랫폼의 개발을 담당했습니다.</p>
+              </TextBox>
+              <TextBox title="Work">
+                <TextList
+                  list={[
+                    "로그인/회원가입 플로우 재설계 및 react-hook-form + zod 기반으로 입력 유효성 검증 로직 및 타입 안전성 확보",
+                    "캐시 충전 및 쿠폰 적용 흐름에 대한 상태 기반 UI/로직 분리 구조 설계 및 적용",
+                    "사용자 서비스 전반의 컴포넌트 구조 리팩토링 및 기능 단위 분리로 유지보수성과 확장성 개선",
+                    "GitHub Actions 기반 CI/CD 파이프라인 구축 및 브랜치 전략에 따른 자동 배포 환경 설계",
+                    "반응형 랜딩 페이지의 퍼블리싱 및 모듈화된 스타일 시스템 구성",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <p> React, Next.js, Zustand, Tailwind CSS, React Query, Axios, zod</p>
+              </TextBox>
+            </ContentBox>
+          </div>
+        </TwoSeperatedBox>
         {/* # 오라클컴퍼니 */}
         <TwoSeperatedBox>
           <StickyBox
@@ -60,15 +144,17 @@ export default function Home() {
                   alt="베이커리 플랫폼 제안서 홈 화면"
                   width={100}
                   height={100}
+                  className="flex-1 w-0 min-w-0 object-contain"
                 />
                 <Image
                   src="/images/proposal/제안서.png"
                   alt="베이커리 플랫폼 제안서 입점신청서 화면"
                   width={100}
                   height={100}
+                  className="flex-1 w-0 min-w-0 object-contain"
                 />
               </ImageBox>
-              <TextBox title="베이커리 제안서/입점 신청 페이지">
+              <TextBox title="베이커리 랜딩페이지 및 입점 신청 페이지 개발">
                 <p>
                   베이커리 플랫폼을 홍보할 수 있는 랜딩 페이지와 입점 신청을 받을 수 있는 페이지를
                   설계 및 개발했습니다.
@@ -77,22 +163,28 @@ export default function Home() {
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "페이지 기획 및 기능 정의",
-                    "firebase 에 업로드 된 입점 데이터를 가공 및 추출하여 구글 spread sheets에 연결시킴으로 비개발자 직원의 문서작업의 효율을 높임",
-                    "Styled-components 를 사용한 공통 컴포넌트 구축",
-                    "미디어 쿼리를 활용하여 모든 기기에 최적화된 반응형 페이지 개발",
+                    "Firebase 기반 데이터 구조 및 Storage 설계로 입점 신청 정보 저장 및 이미지 업로드 기능 구현",
+                    "신청 데이터를 Google Sheets API로 자동 변환·연동하여 비개발자의 문서화 업무 효율화",
+                    "사업자 등록번호 조회(공공데이터 API), 주소 검색(다음 API) 등 외부 API 연동",
+                    "styled-components 기반 공통 UI 컴포넌트 시스템 설계 및 반응형 퍼블리싱 구현",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Nextjs, firebase, styled-components</p>
+                <p> React, Next.js, Firebase, styled-components, Axios</p>
               </TextBox>
             </ContentBox>
 
             {/* 오라클컴퍼니 2 */}
             <ContentBox>
               <ImageBox>
-                <img src="/images/bbanggle/홈.png" alt="베이커리 플랫폼 메인 프로덕트" />
+                <Image
+                  src="/images/bbanggle/홈.png"
+                  alt="베이커리 플랫폼 개발"
+                  width={100}
+                  height={100}
+                  className="flex-1 w-0 min-w-0 object-contain"
+                />
               </ImageBox>
               <TextBox title="베이커리 플랫폼 프로토타입 & 메인 프로덕트">
                 <p>
@@ -104,16 +196,17 @@ export default function Home() {
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "전반적인 컴포넌트 작성 및 프로젝트 셋팅",
-                    "react-query 를 사용한 무한 스크롤 적용을 통해 사용자 경험 향상",
-                    "Redux + 카카오 api 를 사용해 현재 위치에 대한 주소 정보 저장 및 위치 데이터 관리",
-                    "Git branch 를 통해 프로토 타입과 메인 프로덕트를 분리시켜 버전 관리 수행",
-                    "서비스 기획 및 기능 정의에 함께 참여하여 사용자 UX/UI 개선",
+                    "서비스 기획 단계부터 참여하여 전체 화면 구조 및 데이터 흐름 설계 주도",
+                    "react-query 기반 무한 스크롤, 메뉴·매장 상세 페이지, 주문 내역 등 핵심 기능 개발",
+                    "Geolocation API 및 Kakao 주소 검색 API 연동으로 위치 기반 주소 설정 및 즐겨찾기 기능 구현",
+                    "카카오 로그인, 약관 동의, 닉네임 중복 확인 등 인증 절차 및 예외 대응 흐름 구현",
+                    "주문 금액 및 포인트 계산 로직 구현, Redux 기반 상태 관리 구조 설계",
+                    "Firebase Hosting으로 배포 및 접속자 수 기반 기능 개선 논의 지원",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Redux, Nextjs, firebase, styled-components</p>
+                <p>React, Next.js, Redux, react-query, Firebase, styled-components</p>
               </TextBox>
 
               <TextBox title="Portfolio">
@@ -136,15 +229,15 @@ export default function Home() {
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "기획팀과 백엔드, 프론트 팀의 주기적인 회의 진행을 통해 기획, 개발의 방향성 제시 및 의견 조율",
-                    "화면 설계 및 라우팅 구축. 전체적인 프로젝트의 구조를 잡음",
-                    "custom hook 공통 모듈을 활용해 효율적인 코드관리를 하고자 함",
-                    "검색, 필터링, 페이지 네비게이션, 로그인 구현",
+                    "입점사 및 상품·주문·정산 관리를 위한 백오피스 시스템 구조 및 화면 흐름 설계 주도",
+                    "Atomic Design 기반 UI 컴포넌트 체계 설계 및 custom hook 추상화로 재사용성과 유지보수성 개선",
+                    "검색, 필터, 페이지네이션, 로그인 등 백오피스 핵심 기능 구현",
+                    "기획·프론트·백엔드 협업을 통해 기능 요구사항 정립 및 개발 방향 조율",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Redux, Nextjs, styled-components</p>
+                <p>React, Next.js, Redux, styled-components</p>
               </TextBox>
               <TextBox title="Portfolio">
                 해당 프로젝트는{" "}
@@ -156,7 +249,6 @@ export default function Home() {
             </ContentBox>
           </div>
         </TwoSeperatedBox>
-
         {/* # 오르카소프트 */}
         <TwoSeperatedBox>
           <StickyBox
@@ -168,21 +260,20 @@ export default function Home() {
           <div>
             {/* 오르카소프트 1 */}
             <ContentBox>
-              <TextBox title="백오피스 개발 템플릿 ">
+              <TextBox title="백오피스 템플릿 개발 ">
                 <p>관리자 페이지를 개발할 때 사용하게 될 기본 템플릿 페이지 개발</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "Vue.js 와 thymeleaf 로 각각 2가지 버전의 관리자 페이지 개발",
-                    "미디어 쿼리를 사용하여 반응형 웹으로 제작",
-                    "UX를 고려한 다양한 사용자 편의 제공",
-                    "관리자 페이지 thymeleaf와 spring으로 마이그레이션",
+                    "Vue.js 및 Thymeleaf 기반의 공통 백오피스 템플릿 설계 및 개발, 다양한 기술 환경에서 재사용 가능한 구조 구현",
+                    "입력 오류 방지 및 시각적 피드백 등 UX 요소를 반영한 사용자 인터랙션 설계",
+                    "RESTful API 연동 기반 CRUD 기능 구성 및 반응형 레이아웃 대응",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>HTML5, Css, Javascript, Vue.js, thymeleaf, spring</p>
+                <p>Vue.js, JavaScript, Thymeleaf, Spring</p>
               </TextBox>
             </ContentBox>
 
@@ -197,35 +288,14 @@ export default function Home() {
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "식수관리 및 통계 .xlsx 다운로드, 주간 메뉴 업로드 기능 개발",
-                    "화면 깜빡임을 최소화하며, UX 개선",
-                    "restful api 를 통해 서버와 통신하며 CRUD 구현",
-                    "Vuex를 사용하여 로그인 상태 관리",
+                    "PHP 기반 시스템을 Vue.js 및 Nuxt.js 기반으로 리팩토링 및 마이그레이션",
+                    "식단 관리, 주간 메뉴 업로드, 통계 다운로드(xlsx) 등 주요 기능 개발",
+                    "로그인 상태 및 권한 기반 화면 접근 제어 로직 구현",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>HTML5, Css, Javascript, Vue.js, Nuxt.js</p>
-              </TextBox>
-            </ContentBox>
-
-            {/* 오르카소프트 3 */}
-            <ContentBox>
-              <TextBox title="VR 간호 시험 관리 관리자 시스템">
-                <p>VR 간호시험 결과 확인 및 학생, 선생님을 관리하는 웹 페이지를 개발했습니다.</p>
-              </TextBox>
-              <TextBox title="Work">
-                <TextList
-                  list={[
-                    "화면 설계/디자인을 포함한 프론트 단의 기능 개발",
-                    "router-navigation 을 통해 슈퍼관리자와 일반관리자에게 보여지는 화면 통제",
-                    "restful api 를 통해 서버와 통신하며 CRUD 구현",
-                    "학생 성적 데이터와 학생 정보 excel 다운로드 기능 개발",
-                  ]}
-                />
-              </TextBox>
-              <TextBox title="Technical">
-                <p>HTML5, Css, Javascript, Vue.js</p>
+                <p>Vue.js, Nuxt.js, JavaScript, Vuex</p>
               </TextBox>
             </ContentBox>
           </div>
@@ -245,6 +315,7 @@ export default function Home() {
                 alt="나만의 포켓몬 도감"
                 width={100}
                 height={100}
+                className="flex-1 w-0 min-w-0 object-contain"
               />
             </ImageBox>
             <TextBox>
@@ -286,7 +357,13 @@ export default function Home() {
           <StickyBox title="React 예제 실습" subContent="2022/07" />
           <ContentBox>
             <ImageBox>
-              <img src="/images/projects/코드실습.PNG" alt="React 예제 실습" />
+              <Image
+                src="/images/projects/코드실습.PNG"
+                alt="React 예제 실습"
+                width={100}
+                height={100}
+                className="flex-1 w-0 min-w-0 object-contain"
+              />
             </ImageBox>
             <TextBox>
               <p>처음 React 를 공부하며 개발한 페이지입니다.</p>
@@ -323,7 +400,13 @@ export default function Home() {
           <StickyBox title="Custom Toast Message" subContent="2021/06" />
           <ContentBox>
             <ImageBox>
-              <img src="/images/projects/CustomToastMessage.png" alt="커스텀 토스트 메시지" />
+              <Image
+                src="/images/projects/CustomToastMessage.png"
+                alt="커스텀 토스트 메시지"
+                width={100}
+                height={100}
+                className="flex-1 w-0 min-w-0 object-contain"
+              />
             </ImageBox>
 
             <TextBox>

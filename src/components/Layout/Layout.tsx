@@ -1,4 +1,8 @@
-import { ContainerProps } from "@/interfaces/Common.interface";
+import { ReactNode } from "react";
+
+interface ContainerProps {
+  children: ReactNode;
+}
 
 export default function Layout({ children }: ContainerProps) {
   return (

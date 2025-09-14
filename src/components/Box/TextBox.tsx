@@ -10,7 +10,7 @@ export default function TextBox({ title, children }: IProps) {
   return (
     <div className="mb-5 last:mb-0">
       {title && (
-        <Text size="xl" isBold>
+        <Text size="xl" isBold className="mb-[8px]">
           {title}
         </Text>
       )}
