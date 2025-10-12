@@ -6,6 +6,7 @@ import TwoSeperatedBox from "@/components/Box/TwoSeperatedBox";
 import BottomSection from "@/components/Layout/BottomSection";
 import TopSection from "@/components/Layout/TopSection";
 import Text from "@/components/Text";
+import ChipList from "@/components/Text/Chip";
 import LinkText from "@/components/Text/LinkText";
 import SubHeader from "@/components/Text/SubHeader";
 import TopHeader from "@/components/Text/TopHeader";
@@ -53,21 +54,22 @@ export default function Home() {
             <ContentBox>
               <TextBox title="미스터블루 서비스 유지보수 및 기능 개선">
                 <p>
-                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 UI 구조 파악 및 신규 기능
-                  유지보수 수행
+                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 유지보수 및 신규 기능 개발
                 </p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "신규 사업건 개발(이벤트, 신규 페이지 등) 및 레거시 마이그레이션",
-                    "기능 추가/변경 요청에 대한 영향 범위 분석 및 안정성 확보 중심의 개발 진행",
-                    "기술 문서 작성 및 기획/디자인 팀과의 유연한 커뮤니케이션을 통한 서비스 품질 유지 기여",
+                    "Nuxt/Next 기반 미스터블루 서비스(CMS/강툰/미스터블루) 유지보수 및 신규 기능 개발",
+                    ">정기배포 다수 참여 및 hotfix 이슈 대응으로 서비스 안정성 확보",
+                    ">Next.js 기반 출석체크 이벤트 개발, 모바일·PC·앱 연동 이벤트 시스템 구축",
+                    ">공통 컴포넌트(Checkbox, Dropdown, Pagination 등) 설계 및 Storybook 문서화",
+                    "신규 웹소설 서비스(운영/CMS/ADMIN) 기획 참여 및 개발",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p> React, Next.js, Vue, Nuxt.js, TypeScript</p>
+                <ChipList list={["React", "Next.js", "Vue", "Nuxt.js", "TypeScript"]} />
               </TextBox>
             </ContentBox>
             {/* 미스터블루 2 */}
@@ -75,14 +77,14 @@ export default function Home() {
               <TextBox title="작품홈 성능 개선 및 UI 구조 재설계">
                 <TextList
                   list={[
-                    "SSR 환경에서 레거시 코드 기반의 기기 너비 계산 로직으로 발생한 모바일 UI 깨짐 이슈의 근본 원인을 분석 및 제거",
-                    "기존 스켈레톤 강제 노출 방식 대신 CSS 정적 레이아웃 구조로 재설계하여 렌더링 안정성과 유지보수성 개선",
-                    "복잡한 UI 계산 구조 단순화 및 불필요 연산 제거로 Lighthouse 성능 점수 60점에서  99점 상승, 진입 속도 약 1.5초 단축",
+                    "SSR 환경의 Skeleton 강제 노출 제거, CSS 정적 레이아웃 구조로 재설계",
+                    "SafeArea 침범, padding, UI 깨짐 등 세부 안정성 이슈 개선",
+                    ">Lighthouse 점수 60 → 99 (약 65%) 향상, 진입 속도 1.5초 단축으로 초기 로딩 경험 향상",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>Nuxt.js, Vue</p>
+                <ChipList list={["Nuxt.js", "Vue"]} />
               </TextBox>
             </ContentBox>
             {/* 미스터블루 3 */}
@@ -102,7 +104,9 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Vite, Ant Design, Zustand, React Query, Axios</p>
+                <ChipList
+                  list={["React", "Vite", "Ant Design", "Zustand", "React Query", "Axios"]}
+                />
               </TextBox>
             </ContentBox>
             {/* 미스터블루 4 */}
@@ -122,7 +126,17 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p> React, Next.js, Zustand, Tailwind CSS, React Query, Axios, zod</p>
+                <ChipList
+                  list={[
+                    "React",
+                    "Next.js",
+                    "Zustand",
+                    "Tailwind CSS",
+                    "React Query",
+                    "Axios",
+                    "zod",
+                  ]}
+                />
               </TextBox>
             </ContentBox>
           </div>
@@ -171,7 +185,7 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p> React, Next.js, Firebase, styled-components, Axios</p>
+                <ChipList list={["React", "Next.js", "Firebase", "styled-components", "Axios"]} />
               </TextBox>
             </ContentBox>
 
@@ -206,7 +220,16 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Next.js, Redux, react-query, Firebase, styled-components</p>
+                <ChipList
+                  list={[
+                    "React",
+                    "Next.js",
+                    "Redux",
+                    "react-query",
+                    "Firebase",
+                    "styled-components",
+                  ]}
+                />
               </TextBox>
 
               <TextBox title="Portfolio">
@@ -237,7 +260,7 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>React, Next.js, Redux, styled-components</p>
+                <ChipList list={["React", "Next.js", "Redux", "styled-components"]} />
               </TextBox>
               <TextBox title="Portfolio">
                 해당 프로젝트는{" "}
@@ -273,7 +296,7 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>Vue.js, JavaScript, Thymeleaf, Spring</p>
+                <ChipList list={["Vue.js", "JavaScript", "Thymeleaf", "Spring"]} />
               </TextBox>
             </ContentBox>
 
@@ -295,7 +318,7 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <p>Vue.js, Nuxt.js, JavaScript, Vuex</p>
+                <ChipList list={["Vue.js", "Nuxt.js", "JavaScript", "Vuex"]} />
               </TextBox>
             </ContentBox>
           </div>
@@ -347,7 +370,17 @@ export default function Home() {
               </Text>
             </TextBox>
             <TextBox title="Technical">
-              <p>React, Vite, React-Query, Recoil, Tailwind, TypeScript, Firebase</p>
+              <ChipList
+                list={[
+                  "React",
+                  "Vite",
+                  "React-Query",
+                  "Recoil",
+                  "Tailwind",
+                  "TypeScript",
+                  "Firebase",
+                ]}
+              />
             </TextBox>
           </ContentBox>
         </TwoSeperatedBox>
@@ -392,7 +425,7 @@ export default function Home() {
               </Text>
             </TextBox>
             <TextBox title="Technical">
-              <p>React</p>
+              <ChipList list={["React"]} />
             </TextBox>
           </ContentBox>
         </TwoSeperatedBox>
@@ -425,7 +458,7 @@ export default function Home() {
             </TextBox>
 
             <TextBox title="Technical">
-              <p>Vue</p>
+              <ChipList list={["Vue"]} />
             </TextBox>
           </ContentBox>
         </TwoSeperatedBox>
@@ -438,19 +471,23 @@ export default function Home() {
           <Text size="xl" isBold>
             Github
           </Text>
-          <p className="mb-7"> https://github.com/mirro97</p>
+          <LinkText className="mb-7" href="https://github.com/mirro97">
+            https://github.com/mirro97
+          </LinkText>
         </TwoSeperatedBox>
         <TwoSeperatedBox>
           <Text size="xl" isBold>
             Blog
           </Text>
-          <p className="mb-7">https://nychicken.tistory.com/</p>
+          <LinkText className="mb-7" href="https://nychicken.tistory.com/">
+            https://nychicken.tistory.com/
+          </LinkText>
         </TwoSeperatedBox>
         <TwoSeperatedBox>
           <Text size="xl" isBold>
             Email
           </Text>
-          <p className="mb-7">mirro97@naver.com</p>
+          <p>mirro97@naver.com</p>
         </TwoSeperatedBox>
       </BasicBox>
 

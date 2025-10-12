@@ -11,7 +11,7 @@ export default function TopHeader({ children }: IProps) {
       <Text size="3xl" isPoint>
         &#123;
       </Text>
-      <p className="ml-[24px] break-keep">{children}</p>
+      <p className="ml-[24px] break-keep text-3xl">{children}</p>
       <Text size="3xl" isPoint>
         &#123;
       </Text>
