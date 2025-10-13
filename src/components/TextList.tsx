@@ -15,23 +15,23 @@ export default function TextList({ list }: IProps) {
       return {
         content: text.slice(1).trim(),
         listStyle: "list-[circle]",
-        marginLeft: "ml-[30px]",
+        marginLeft: "ml-[25px]",
       };
     }
     return {
       content: text,
-      listStyle: "list-disc",
-      marginLeft: "ml-[12px]",
+      listStyle: "list-[disc]",
+      marginLeft: "ml-[5px]",
     };
   };
 
   return (
-    <ul className="list-disc">
+    <ul>
       {list.map((el, index) => {
         const { content, listStyle, marginLeft } = getItemConfig(el);
 
         return (
-          <li key={`${el}-${index}`} className={`${listStyle} ${marginLeft} text-[14px] pl-[6px]`}>
+          <li key={`${el}-${index}`} className={`${listStyle} ${marginLeft} text-[14px]`}>
             {content}
           </li>
         );
