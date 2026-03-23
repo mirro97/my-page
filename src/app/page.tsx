@@ -23,18 +23,15 @@ export default function Home() {
 
       <BasicBox>
         <TextBox>
-          시간과 공간의 제약 없이 사람들에게 가치를 전달할 수 있다는 점에 매력을 느껴 개발자가
-          되었습니다. 현재 3년 차 프론트엔드 개발자로 일하고 있으며, 개발 이전에는 축제 및 행사
-          기획·운영과 디자인 업무를 경험하며 다양한 직무의 사람들과 적극적으로 소통해왔습니다.
-          이러한 다양한 협업 경험을 바탕으로 디자이너를 비롯한 팀원들과의 원활한 커뮤니케이션이
-          가능하며, 사용자 경험을 고려한 UI/UX 설계와 서비스 기획에 강점이 있습니다.
+          4년 차 프론트엔드 개발자로, 웹소설 플랫폼과 CMS/CP 시스템 등 다양한 프로젝트에서 구조
+          설계부터 UI/UX 개선, 성능 최적화까지 주도적으로 기여해왔습니다. 새로운 코드베이스를 빠르게
+          파악하고 안정적으로 운영하며, 문제를 명확히 정의하고 해결하는 것에 강점이 있습니다.
         </TextBox>
         <TextBox>
-          개인적으로 새로운 기술과 도전을 즐기며, 이전 프로젝트에서는 팀원들과 스터디를 운영해
-          지식을 공유하고 함께 성장해왔습니다. 최근에는 ChatGPT, Cursor, Claude 등 다양한 AI 도구를
-          실무에 적극적으로 활용하여 개발 생산성과 코드 품질을 향상시키는 데 집중하고 있습니다.
-          빠르게 변화하는 개발 환경 속에서 새로운 기술을 능동적으로 흡수하고 적용하는 능력을
-          강점으로 삼고 있습니다.
+          단순한 UI 구현을 넘어 상태 관리, API 연동, 사용자 흐름을 고려한 구조적 설계를 지향합니다.
+          체계적인 문서화와 원활한 커뮤니케이션을 통해 팀과의 협업에서도 신뢰를 만들어왔으며,
+          ChatGPT, Cursor, Claude 등 AI 도구를 실무에 적극 활용하여 개발 생산성과 코드 품질을 높이고
+          있습니다.
         </TextBox>
       </BasicBox>
 
@@ -50,11 +47,36 @@ export default function Home() {
             subContent="2023/04 - 재직중"
           />
           <div>
+            {/* 회원가입/로그인 개편 */}
+            <ContentBox>
+              <TextBox title="회원가입/로그인 개편">
+                <p>
+                  기존 회원가입·로그인 시스템을 전면 개편하여 사용자 경험과 보안을 개선했습니다.
+                </p>
+              </TextBox>
+              <TextBox title="Work">
+                <TextList
+                  list={[
+                    "react-hook-form + zod 기반 입력 검증 및 타입 안전성 확보",
+                    "shadcn/ui 기반 공통 컴포넌트(Button, Drawer/Sheet 등) 도입 및 설계",
+                    "이니시스 통합인증 연동 개발 및 관련 wiki 문서 작성",
+                    "내정보/관리 페이지 구조 재설계 및 API 연동",
+                    "충전/사용내역, 쿠폰 등록 등 마이페이지 하위 기능 개발",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <ChipList
+                  list={["React", "Next.js", "shadcn/ui", "react-hook-form", "zod", "Tailwind CSS"]}
+                />
+              </TextBox>
+            </ContentBox>
             {/* 미스터블루 1 */}
             <ContentBox>
               <TextBox title="미스터블루 서비스 유지보수 및 기능 개선">
                 <p>
-                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 유지보수 및 신규 기능 개발
+                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 유지보수 및 신규 기능을
+                  개발했습니다.
                 </p>
               </TextBox>
               <TextBox title="Work">
@@ -104,15 +126,13 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <ChipList
-                  list={["React", "Vite", "Ant Design", "Zustand", "React Query", "Axios"]}
-                />
+                <ChipList list={["React", "Vite", "Ant Design", "Zustand", "React Query"]} />
               </TextBox>
             </ContentBox>
             {/* 미스터블루 4 */}
             <ContentBox>
               <TextBox title="웹소설 플랫폼 신규 개발">
-                <p>신규 웹소설 플랫폼의 개발을 담당했습니다.</p>
+                <p>신규 웹소설 플랫폼의 사용자 서비스를 설계 및 개발했습니다.</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
@@ -127,15 +147,7 @@ export default function Home() {
               </TextBox>
               <TextBox title="Technical">
                 <ChipList
-                  list={[
-                    "React",
-                    "Next.js",
-                    "Zustand",
-                    "Tailwind CSS",
-                    "React Query",
-                    "Axios",
-                    "zod",
-                  ]}
+                  list={["React", "Next.js", "Zustand", "Tailwind CSS", "React Query", "zod"]}
                 />
               </TextBox>
             </ContentBox>
@@ -169,10 +181,7 @@ export default function Home() {
                 />
               </ImageBox>
               <TextBox title="베이커리 랜딩페이지 및 입점 신청 페이지 개발">
-                <p>
-                  베이커리 플랫폼을 홍보할 수 있는 랜딩 페이지와 입점 신청을 받을 수 있는 페이지를
-                  설계 및 개발했습니다.
-                </p>
+                <p>베이커리 플랫폼 홍보용 랜딩 페이지와 입점 신청 페이지를 설계 및 개발했습니다.</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
@@ -185,7 +194,7 @@ export default function Home() {
                 />
               </TextBox>
               <TextBox title="Technical">
-                <ChipList list={["React", "Next.js", "Firebase", "styled-components", "Axios"]} />
+                <ChipList list={["React", "Next.js", "Firebase", "styled-components"]} />
               </TextBox>
             </ContentBox>
 
@@ -203,7 +212,7 @@ export default function Home() {
               <TextBox title="베이커리 플랫폼 프로토타입 & 메인 프로덕트">
                 <p>
                   빵 예약 및 픽업서비스를 제공하는 플랫폼의 프로토타입과 메인 프로덕트를 설계 및
-                  개발 했습니다. 프로토타입은 영업 프레젠테이션 에 사용되어 베이커리 입점률 향상에
+                  개발했습니다. 프로토타입은 영업 프레젠테이션에 사용되어 베이커리 입점률 향상에
                   기여했습니다.
                 </p>
               </TextBox>
@@ -245,8 +254,8 @@ export default function Home() {
             <ContentBox>
               <TextBox title="베이커리 플랫폼 백오피스">
                 <p>
-                  베이커리 서비스를 총 관리할 수 있는 백오피스를 개발했습니다. 기획팀과 함께 기능
-                  기획에 참여하여 다양한 UC 를 고려한 기획과 구조를 설계 했습니다.
+                  베이커리 서비스 운영을 위한 백오피스를 개발했습니다. 기획팀과 협업하여 다양한
+                  유즈케이스를 고려한 구조를 설계했습니다.
                 </p>
               </TextBox>
               <TextBox title="Work">
@@ -284,7 +293,7 @@ export default function Home() {
             {/* 오르카소프트 1 */}
             <ContentBox>
               <TextBox title="백오피스 템플릿 개발 ">
-                <p>관리자 페이지를 개발할 때 사용하게 될 기본 템플릿 페이지 개발</p>
+                <p>관리자 페이지 개발 시 사용할 공통 백오피스 템플릿을 설계 및 개발했습니다.</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
@@ -302,10 +311,10 @@ export default function Home() {
 
             {/* 오르카소프트 2 */}
             <ContentBox>
-              <TextBox title="식수관리 시스템 리펙토링 및 마이그레이션">
+              <TextBox title="식수관리 시스템 리팩토링 및 마이그레이션">
                 <p>
-                  기존 php 로 개발된 시스템을 새롭게 리펙토링 및 마이그레이션 했습니다. 일반 사용자
-                  페이지와 관리자 페이지로 권한을 구분하여 개발했습니다
+                  기존 PHP로 개발된 시스템을 리팩토링 및 마이그레이션했습니다. 일반 사용자 페이지와
+                  관리자 페이지로 권한을 구분하여 개발했습니다.
                 </p>
               </TextBox>
               <TextBox title="Work">
