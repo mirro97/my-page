@@ -18,15 +18,96 @@
   }
 
   .glass-card {
-    background: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 28px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5),
-      inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 60px 30px rgba(255, 255, 255, 0.03);
+    border-radius: 26px;
     position: relative;
     overflow: hidden;
+  }
+
+  .siri-glow-wrapper {
+    position: relative;
+    border-radius: 28px;
+  }
+
+  .siri-glow-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .siri-glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(
+      from 0deg,
+      #ff9a56,
+      #ffb347,
+      transparent,
+      #ff6b8a,
+      #ffd700,
+      transparent,
+      #ff9a56
+    );
+    animation: siri-rotate 6s linear infinite, siri-pulse 3s ease-in-out infinite;
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+
+  .siri-glow-wrapper {
+    box-shadow: 0 0 8px 1px rgba(255, 154, 86, 0.08),
+                0 0 16px 2px rgba(255, 107, 138, 0.05);
+    animation: siri-outer-glow 3s ease-in-out infinite;
+  }
+
+  .siri-glow-wrapper > .glass-card {
+    position: relative;
+    z-index: 1;
+    margin: 3px;
+  }
+
+  @media (min-width: 640px) {
+    .siri-glow-wrapper {
+      box-shadow: none;
+      animation: none;
+      border-radius: 0;
+    }
+
+    .siri-glow-wrapper > .glass-card {
+      margin: 0;
+    }
+  }
+
+  @keyframes siri-rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes siri-pulse {
+    0%, 100% {
+      filter: blur(3px);
+      opacity: 0.5;
+    }
+    50% {
+      filter: blur(6px);
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes siri-outer-glow {
+    0%, 100% {
+      box-shadow: 0 0 8px 1px rgba(255, 154, 86, 0.08),
+                  0 0 16px 2px rgba(255, 107, 138, 0.05);
+    }
+    50% {
+      box-shadow: 0 0 12px 3px rgba(255, 154, 86, 0.12),
+                  0 0 24px 4px rgba(255, 107, 138, 0.08);
+    }
   }
 }
 
