@@ -36,6 +36,28 @@ export default function Home() {
           체계적인 문서화와 원활한 커뮤니케이션을 기반으로, 팀과 함께 안정적인 서비스를 만들어가는
           것을 지향합니다. AI 도구를 실무에 적극 활용하여 개발 생산성과 코드 품질을 높이고 있습니다.
         </TextBox>
+        <div className="flex justify-center gap-4 mt-2 text-sm">
+          <LinkText
+            className="transition-opacity duration-300 hover:opacity-60"
+            href="https://github.com/mirro97"
+          >
+            Github
+          </LinkText>
+          <span className="text-gray-300">|</span>
+          <LinkText
+            className="transition-opacity duration-300 hover:opacity-60"
+            href="https://nychicken.tistory.com/"
+          >
+            Blog
+          </LinkText>
+          <span className="text-gray-300">|</span>
+          <LinkText
+            className="transition-opacity duration-300 hover:opacity-60"
+            href="mailto:mirro97@naver.com"
+          >
+            Email
+          </LinkText>
+        </div>
       </BasicBox>
 
       {/* 경력 */}
@@ -378,37 +400,19 @@ export default function Home() {
         </TwoSeperatedBox>
       </BasicBox>
 
-      {/* 연락처 */}
-      <BasicBox>
-        <SubHeader>Contact</SubHeader>
-        <TwoSeperatedBox>
-          <Text size="xl" isBold>
-            Github
-          </Text>
-          <LinkText className="mb-7" href="https://github.com/mirro97">
-            https://github.com/mirro97
-          </LinkText>
-        </TwoSeperatedBox>
-        <TwoSeperatedBox>
-          <Text size="xl" isBold>
-            Blog
-          </Text>
-          <LinkText className="mb-7" href="https://nychicken.tistory.com/">
-            https://nychicken.tistory.com/
-          </LinkText>
-        </TwoSeperatedBox>
-        <TwoSeperatedBox>
-          <Text size="xl" isBold>
-            Email
-          </Text>
-          <p>mirro97@naver.com</p>
-        </TwoSeperatedBox>
-      </BasicBox>
-
       {/* footer */}
       <BottomSection>
         <Text size="sm">Front-End Engineer, sujeong.k</Text>
-        <LinkText href="https://github.com/mirro97/my-page">📎 Check Code</LinkText>
+        <div className="flex justify-center gap-3 mt-3 text-sm">
+          <LinkText className="text-orange-400 transition-opacity duration-300 hover:opacity-60" href="https://github.com/mirro97">Github</LinkText>
+          <span className="text-orange-300">|</span>
+          <LinkText className="text-orange-400 transition-opacity duration-300 hover:opacity-60" href="https://nychicken.tistory.com/">Blog</LinkText>
+          <span className="text-orange-300">|</span>
+          <LinkText className="text-orange-400 transition-opacity duration-300 hover:opacity-60" href="mailto:mirro97@naver.com">Email</LinkText>
+          <span className="text-orange-300">|</span>
+          <LinkText className="text-orange-400 transition-opacity duration-300 hover:opacity-60" href="https://github.com/mirro97/my-page">Source</LinkText>
+        </div>
+        <Text size="sm" className="mt-3 text-orange-300">© 2025 Sujeong Kang</Text>
       </BottomSection>
     </>
   );

@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import Text from "../Text";
-import Point from "./Point";
 
 interface IProps {
   children: ReactNode;

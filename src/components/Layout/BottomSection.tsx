@@ -7,7 +7,7 @@ interface ContainerProps {
 export default function BottomSection({ children }: ContainerProps) {
   return (
     <footer className="py-14  text-center">
-      <div className="rounded-3xl py-10 px-2 bg-orange-100 text-orange-400">{children}</div>
+      <div className="rounded-3xl py-10 px-2 bg-orange-50 text-orange-400">{children}</div>
     </footer>
   );
 }
