@@ -17,28 +17,32 @@ export default function Home() {
     <>
       <TopSection>
         <TopHeader>
-          안녕하세요, <br /> 프론트엔드 개발자 강수정입니다 :&#41;
+          안녕하세요, <br /> 프론트엔드 개발자 강수정입니다
+          <Text size="3xl" isPoint>
+            ;
+          </Text>
         </TopHeader>
       </TopSection>
 
-      <BasicBox>
+      {/* 소개 + Contact */}
+      <BasicBox className="mx-auto max-w-[750px] w-[calc(100%-32px)] text-center">
         <TextBox>
-          4년 차 프론트엔드 개발자로, 웹소설 플랫폼과 CMS/CP 시스템 등 다양한 프로젝트에서 구조
-          설계부터 UI/UX 개선, 성능 최적화까지 주도적으로 기여해왔습니다. 새로운 코드베이스를 빠르게
-          파악하고 안정적으로 운영하며, 문제를 명확히 정의하고 해결하는 것에 강점이 있습니다.
+          4년간 웹소설 플랫폼과 커머스 서비스에서 구조 설계부터 성능 최적화까지 프론트엔드 전반에
+          주도적으로 기여해왔습니다. 기획 단계부터 참여하여 화면 구조와 데이터 흐름을 설계하고,
+          Lighthouse 점수 65% 향상과 초기 로딩 1.5초 단축 등 눈에 보이는 개선을 만들어왔습니다.
         </TextBox>
         <TextBox>
-          단순한 UI 구현을 넘어 상태 관리, API 연동, 사용자 흐름을 고려한 구조적 설계를 지향합니다.
-          체계적인 문서화와 원활한 커뮤니케이션을 통해 팀과의 협업에서도 신뢰를 만들어왔으며,
-          ChatGPT, Cursor, Claude 등 AI 도구를 실무에 적극 활용하여 개발 생산성과 코드 품질을 높이고
-          있습니다.
+          새로운 코드베이스를 빠르게 파악하고 문제를 명확히 정의하여 해결하는 것에 강점이 있습니다.
+          체계적인 문서화와 원활한 커뮤니케이션을 기반으로, 팀과 함께 안정적인 서비스를 만들어가는
+          것을 지향합니다. AI 도구를 실무에 적극 활용하여 개발 생산성과 코드 품질을 높이고 있습니다.
         </TextBox>
       </BasicBox>
 
       {/* 경력 */}
       <BasicBox>
         <SubHeader>Experience</SubHeader>
-        {/* #미스터블루 */}
+
+        {/* 미스터블루 */}
         <TwoSeperatedBox>
           <StickyBox
             hasTitlePoint
@@ -47,12 +51,32 @@ export default function Home() {
             subContent="2023/04 - 재직중"
           />
           <div>
+            {/* 미스터블루 서비스 운영 및 기능 개선 */}
+            <ContentBox>
+              <TextBox title="미스터블루 서비스 운영 및 기능 개선">
+                <p>
+                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등) 유지보수 및 신규 기능 개발
+                </p>
+              </TextBox>
+              <TextBox title="Work">
+                <TextList
+                  list={[
+                    "Nuxt/Next 기반 미스터블루 서비스(CMS/강툰/미스터블루) 유지보수 및 신규 기능 개발",
+                    ">정기배포 다수 참여 및 hotfix 이슈 대응으로 서비스 안정성 확보",
+                    ">Next.js 기반 출석체크 이벤트 개발, 모바일·PC·앱 연동 이벤트 시스템 구축",
+                    ">공통 컴포넌트(Checkbox, Dropdown, Pagination 등) 설계 및 Storybook 문서화",
+                  ]}
+                />
+              </TextBox>
+              <TextBox title="Technical">
+                <ChipList list={["React", "Next.js", "Vue", "Nuxt.js", "TypeScript"]} />
+              </TextBox>
+            </ContentBox>
+
             {/* 회원가입/로그인 개편 */}
             <ContentBox>
               <TextBox title="회원가입/로그인 개편">
-                <p>
-                  기존 회원가입·로그인 시스템을 전면 개편하여 사용자 경험과 보안을 개선했습니다.
-                </p>
+                <p>기존 회원가입·로그인 시스템 전면 개편을 통한 사용자 경험 및 보안 개선</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
@@ -71,37 +95,16 @@ export default function Home() {
                 />
               </TextBox>
             </ContentBox>
-            {/* 미스터블루 1 */}
-            <ContentBox>
-              <TextBox title="미스터블루 서비스 유지보수 및 기능 개선">
-                <p>
-                  다양한 코드베이스 기반 서비스(CMS/강툰/미스터블루 등)의 유지보수 및 신규 기능을
-                  개발했습니다.
-                </p>
-              </TextBox>
-              <TextBox title="Work">
-                <TextList
-                  list={[
-                    "Nuxt/Next 기반 미스터블루 서비스(CMS/강툰/미스터블루) 유지보수 및 신규 기능 개발",
-                    ">정기배포 다수 참여 및 hotfix 이슈 대응으로 서비스 안정성 확보",
-                    ">Next.js 기반 출석체크 이벤트 개발, 모바일·PC·앱 연동 이벤트 시스템 구축",
-                    ">공통 컴포넌트(Checkbox, Dropdown, Pagination 등) 설계 및 Storybook 문서화",
-                    "신규 웹소설 서비스(운영/CMS/ADMIN) 기획 참여 및 개발",
-                  ]}
-                />
-              </TextBox>
-              <TextBox title="Technical">
-                <ChipList list={["React", "Next.js", "Vue", "Nuxt.js", "TypeScript"]} />
-              </TextBox>
-            </ContentBox>
-            {/* 미스터블루 2 */}
+
+            {/* 작품홈 성능 개선 */}
             <ContentBox>
               <TextBox title="작품홈 성능 개선 및 UI 구조 재설계">
                 <TextList
                   list={[
                     "SSR 환경의 Skeleton 강제 노출 제거, CSS 정적 레이아웃 구조로 재설계",
                     "SafeArea 침범, padding, UI 깨짐 등 세부 안정성 이슈 개선",
-                    ">Lighthouse 점수 60 → 99 (약 65%) 향상, 진입 속도 1.5초 단축으로 초기 로딩 경험 향상",
+                    ">Lighthouse 점수 60 → 99 (약 65%) 향상",
+                    ">진입 속도 1.5초 단축으로 초기 로딩 경험 향상",
                   ]}
                 />
               </TextBox>
@@ -109,51 +112,48 @@ export default function Home() {
                 <ChipList list={["Nuxt.js", "Vue"]} />
               </TextBox>
             </ContentBox>
-            {/* 미스터블루 3 */}
+
+            {/* 웹소설 플랫폼 신규 구축 */}
             <ContentBox>
-              <TextBox title="웹소설 플랫폼 CMS/CP 관리자 페이지 개발">
-                <p>신규 웹소설 플랫폼의 CMS/CP 관리자 페이지를 개발했습니다.</p>
+              <TextBox title="웹소설 플랫폼 신규 구축">
+                <p>신규 웹소설 플랫폼의 사용자 서비스 및 CMS/CP 관리자 페이지 설계·개발</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "Vite 기반 프로젝트에서 다양한 관리자 기능을 위한 구조 설계 및 컴포넌트 체계 구축",
-                    "복잡한 폼 입력 구조에 대해 조건 기반 필드 노출, 입력값 유효성 검증, 툴팁 및 에러 피드백 등 UX 개선 로직 설계",
-                    "Excel 기반 작품·볼륨 일괄 등록 기능 및 발송 대상자 정보 다운로드 기능 구현 (XLSX 포맷 처리)",
-                    "즉시발송/예약발송 등 다단계 상태 기반 액션 설계 및 조건별 UI 제어 로직 구현",
-                    "상태 관리 및 비동기 데이터 처리 구조 정리를 통해 유지보수성과 기능 확장성 확보",
-                  ]}
-                />
-              </TextBox>
-              <TextBox title="Technical">
-                <ChipList list={["React", "Vite", "Ant Design", "Zustand", "React Query"]} />
-              </TextBox>
-            </ContentBox>
-            {/* 미스터블루 4 */}
-            <ContentBox>
-              <TextBox title="웹소설 플랫폼 신규 개발">
-                <p>신규 웹소설 플랫폼의 사용자 서비스를 설계 및 개발했습니다.</p>
-              </TextBox>
-              <TextBox title="Work">
-                <TextList
-                  list={[
-                    "로그인/회원가입 플로우 재설계 및 react-hook-form + zod 기반으로 입력 유효성 검증 로직 및 타입 안전성 확보",
-                    "캐시 충전 및 쿠폰 적용 흐름에 대한 상태 기반 UI/로직 분리 구조 설계 및 적용",
-                    "사용자 서비스 전반의 컴포넌트 구조 리팩토링 및 기능 단위 분리로 유지보수성과 확장성 개선",
+                    "사용자 서비스 설계 및 개발",
+                    ">로그인/회원가입 플로우 재설계 및 react-hook-form + zod 기반 입력 유효성 검증 및 타입 안전성 확보",
+                    ">캐시 충전 및 쿠폰 적용 흐름에 대한 상태 기반 UI/로직 분리 구조 설계 및 적용",
+                    ">반응형 랜딩 페이지의 퍼블리싱 및 모듈화된 스타일 시스템 구성",
+                    "CMS/CP 관리자 페이지 개발",
+                    ">Vite 기반 프로젝트에서 관리자 기능을 위한 구조 설계 및 컴포넌트 체계 구축",
+                    ">복잡한 폼 입력 구조에 대해 조건 기반 필드 노출, 입력값 유효성 검증, 에러 피드백 등 UX 개선 로직 설계",
+                    ">Excel 기반 작품·볼륨 일괄 등록 기능 및 발송 대상자 정보 다운로드 기능 구현 (XLSX 포맷 처리)",
+                    ">즉시발송/예약발송 등 다단계 상태 기반 액션 설계 및 조건별 UI 제어 로직 구현",
+                    "컴포넌트 구조 리팩토링 및 기능 단위 분리로 유지보수성과 확장성 개선",
                     "GitHub Actions 기반 CI/CD 파이프라인 구축 및 브랜치 전략에 따른 자동 배포 환경 설계",
-                    "반응형 랜딩 페이지의 퍼블리싱 및 모듈화된 스타일 시스템 구성",
                   ]}
                 />
               </TextBox>
               <TextBox title="Technical">
                 <ChipList
-                  list={["React", "Next.js", "Zustand", "Tailwind CSS", "React Query", "zod"]}
+                  list={[
+                    "React",
+                    "Next.js",
+                    "Vite",
+                    "Zustand",
+                    "React Query",
+                    "Ant Design",
+                    "Tailwind CSS",
+                    "zod",
+                  ]}
                 />
               </TextBox>
             </ContentBox>
           </div>
         </TwoSeperatedBox>
-        {/* # 오라클컴퍼니 */}
+
+        {/* 오라클 컴퍼니 */}
         <TwoSeperatedBox>
           <StickyBox
             hasTitlePoint
@@ -162,69 +162,29 @@ export default function Home() {
             subContent="2022/02 - 2023/02"
           />
           <div>
-            {/* 오라클컴퍼니 1 */}
             <ContentBox>
-              <ImageBox>
-                <Image
-                  src="/images/proposal/홈_00.png"
-                  alt="베이커리 플랫폼 제안서 홈 화면"
-                  width={100}
-                  height={100}
-                  className="flex-1 w-0 min-w-0 object-contain"
-                />
-                <Image
-                  src="/images/proposal/제안서.png"
-                  alt="베이커리 플랫폼 제안서 입점신청서 화면"
-                  width={100}
-                  height={100}
-                  className="flex-1 w-0 min-w-0 object-contain"
-                />
-              </ImageBox>
-              <TextBox title="베이커리 랜딩페이지 및 입점 신청 페이지 개발">
-                <p>베이커리 플랫폼 홍보용 랜딩 페이지와 입점 신청 페이지를 설계 및 개발했습니다.</p>
+              <TextBox title="베이커리 플랫폼 서비스 개발">
+                <p>빵 예약·픽업 플랫폼의 랜딩페이지, 사용자 서비스, 백오피스 설계 및 개발</p>
               </TextBox>
               <TextBox title="Work">
                 <TextList
                   list={[
-                    "Firebase 기반 데이터 구조 및 Storage 설계로 입점 신청 정보 저장 및 이미지 업로드 기능 구현",
-                    "신청 데이터를 Google Sheets API로 자동 변환·연동하여 비개발자의 문서화 업무 효율화",
-                    "사업자 등록번호 조회(공공데이터 API), 주소 검색(다음 API) 등 외부 API 연동",
+                    "랜딩페이지 및 입점 신청 시스템 구축",
+                    ">Firebase 기반 데이터 구조 및 Storage 설계로 입점 신청 정보 저장 및 이미지 업로드 기능 구현",
+                    ">신청 데이터를 Google Sheets API로 자동 변환·연동하여 비개발자의 문서화 업무 효율화",
+                    ">사업자 등록번호 조회(공공데이터 API), 주소 검색(다음 API) 등 외부 API 연동",
+                    "사용자 서비스 설계 및 핵심 기능 개발",
+                    ">서비스 기획 단계부터 참여하여 전체 화면 구조 및 데이터 흐름 설계 주도",
+                    ">react-query 기반 무한 스크롤, 메뉴·매장 상세 페이지, 주문 내역 등 핵심 기능 개발",
+                    ">Geolocation API 및 Kakao 주소 검색 API 연동으로 위치 기반 주소 설정 및 즐겨찾기 기능 구현",
+                    ">카카오 로그인, 약관 동의, 닉네임 중복 확인 등 인증 절차 및 예외 대응 흐름 구현",
+                    ">주문 금액 및 포인트 계산 로직 구현, Redux 기반 상태 관리 구조 설계",
+                    ">프로토타입을 영업 프레젠테이션에 활용하여 베이커리 입점률 향상에 기여",
+                    "백오피스 시스템 설계 및 개발",
+                    ">입점사 및 상품·주문·정산 관리를 위한 시스템 구조 및 화면 흐름 설계 주도",
+                    ">Atomic Design 기반 UI 컴포넌트 체계 설계 및 custom hook 추상화로 재사용성과 유지보수성 개선",
+                    ">검색, 필터, 페이지네이션, 로그인 등 백오피스 핵심 기능 구현",
                     "styled-components 기반 공통 UI 컴포넌트 시스템 설계 및 반응형 퍼블리싱 구현",
-                  ]}
-                />
-              </TextBox>
-              <TextBox title="Technical">
-                <ChipList list={["React", "Next.js", "Firebase", "styled-components"]} />
-              </TextBox>
-            </ContentBox>
-
-            {/* 오라클컴퍼니 2 */}
-            <ContentBox>
-              <ImageBox>
-                <Image
-                  src="/images/bbanggle/홈.png"
-                  alt="베이커리 플랫폼 개발"
-                  width={100}
-                  height={100}
-                  className="flex-1 w-0 min-w-0 object-contain"
-                />
-              </ImageBox>
-              <TextBox title="베이커리 플랫폼 프로토타입 & 메인 프로덕트">
-                <p>
-                  빵 예약 및 픽업서비스를 제공하는 플랫폼의 프로토타입과 메인 프로덕트를 설계 및
-                  개발했습니다. 프로토타입은 영업 프레젠테이션에 사용되어 베이커리 입점률 향상에
-                  기여했습니다.
-                </p>
-              </TextBox>
-              <TextBox title="Work">
-                <TextList
-                  list={[
-                    "서비스 기획 단계부터 참여하여 전체 화면 구조 및 데이터 흐름 설계 주도",
-                    "react-query 기반 무한 스크롤, 메뉴·매장 상세 페이지, 주문 내역 등 핵심 기능 개발",
-                    "Geolocation API 및 Kakao 주소 검색 API 연동으로 위치 기반 주소 설정 및 즐겨찾기 기능 구현",
-                    "카카오 로그인, 약관 동의, 닉네임 중복 확인 등 인증 절차 및 예외 대응 흐름 구현",
-                    "주문 금액 및 포인트 계산 로직 구현, Redux 기반 상태 관리 구조 설계",
-                    "Firebase Hosting으로 배포 및 접속자 수 기반 기능 개선 논의 지원",
                   ]}
                 />
               </TextBox>
@@ -240,48 +200,20 @@ export default function Home() {
                   ]}
                 />
               </TextBox>
-
               <TextBox title="Portfolio">
-                해당 프로젝트는{" "}
                 <LinkText href="https://www.notion.so/kangsujeong-frontend/5ce52cbbeade41688aa3b7418be6a5e7">
-                  이곳
+                  프로토타입
                 </LinkText>
-                에서 확인 가능합니다.
-              </TextBox>
-            </ContentBox>
-
-            {/* 오라클컴퍼니 3 */}
-            <ContentBox>
-              <TextBox title="베이커리 플랫폼 백오피스">
-                <p>
-                  베이커리 서비스 운영을 위한 백오피스를 개발했습니다. 기획팀과 협업하여 다양한
-                  유즈케이스를 고려한 구조를 설계했습니다.
-                </p>
-              </TextBox>
-              <TextBox title="Work">
-                <TextList
-                  list={[
-                    "입점사 및 상품·주문·정산 관리를 위한 백오피스 시스템 구조 및 화면 흐름 설계 주도",
-                    "Atomic Design 기반 UI 컴포넌트 체계 설계 및 custom hook 추상화로 재사용성과 유지보수성 개선",
-                    "검색, 필터, 페이지네이션, 로그인 등 백오피스 핵심 기능 구현",
-                    "기획·프론트·백엔드 협업을 통해 기능 요구사항 정립 및 개발 방향 조율",
-                  ]}
-                />
-              </TextBox>
-              <TextBox title="Technical">
-                <ChipList list={["React", "Next.js", "Redux", "styled-components"]} />
-              </TextBox>
-              <TextBox title="Portfolio">
-                해당 프로젝트는{" "}
+                {" / "}
                 <LinkText href="https://www.notion.so/kangsujeong-frontend/704df30513d042af836406cba20b74e7">
-                  이곳
+                  백오피스
                 </LinkText>
-                에서 확인 가능합니다.
               </TextBox>
             </ContentBox>
           </div>
         </TwoSeperatedBox>
-        {/* # 오르카소프트 */}
+
+        {/* 오르카소프트 */}
         <TwoSeperatedBox>
           <StickyBox
             hasTitlePoint
@@ -290,9 +222,9 @@ export default function Home() {
             subContent="2021/03 - 2021/12"
           />
           <div>
-            {/* 오르카소프트 1 */}
+            {/* 백오피스 템플릿 개발 */}
             <ContentBox>
-              <TextBox title="백오피스 템플릿 개발 ">
+              <TextBox title="백오피스 템플릿 개발">
                 <p>관리자 페이지 개발 시 사용할 공통 백오피스 템플릿을 설계 및 개발했습니다.</p>
               </TextBox>
               <TextBox title="Work">
@@ -309,7 +241,7 @@ export default function Home() {
               </TextBox>
             </ContentBox>
 
-            {/* 오르카소프트 2 */}
+            {/* 식수관리 시스템 */}
             <ContentBox>
               <TextBox title="식수관리 시스템 리팩토링 및 마이그레이션">
                 <p>
@@ -334,12 +266,11 @@ export default function Home() {
         </TwoSeperatedBox>
       </BasicBox>
 
-      {/* 개인프로젝트 및 경험 */}
+      {/* 개인 프로젝트 */}
       <BasicBox>
-        <SubHeader>Projects & Other Experiences</SubHeader>
-        {/* 나만의 포켓몬 도감 */}
+        <SubHeader>Projects</SubHeader>
         <TwoSeperatedBox>
-          <StickyBox title="나만의 포켓몬 도감" subContent="2023/02" />
+          <StickyBox title="나만의 포켓몬 도감" subContent="2023/02 - 2026/03" />
           <ContentBox>
             <ImageBox>
               <Image
@@ -352,22 +283,24 @@ export default function Home() {
             </ImageBox>
             <TextBox>
               <p>
-                TypeScript 와 Vite, Recoil, Tailwind 를 직접 적용해보고, 공부하기 위해 개발한
-                페이지입니다.
+                PokeAPI 기반 포켓몬 도감 웹앱. 다국어 지원, 무한 스크롤, 타입별 필터링, 검색, SEO
+                최적화 등을 적용하여 지속적으로 개선 중인 사이드 프로젝트.
               </p>
             </TextBox>
-            <TextBox>
+            <TextBox title="Work">
               <TextList
                 list={[
-                  "recoil 을 사용해 현재 적용된 언어의 상태 관리를 함으로써 영어와 한국어 지원",
-                  "웹의 성능을 높이기 위해 react-lazy-load-image-component 라이브러리를 사용해 lazyloading 처리, 트래픽 최소화",
-                  "react-query를 사용해 무한 스크롤 기능 적용",
+                  "Next.js 15 App Router + Edge Runtime 기반 Cloudflare Pages 배포",
+                  "미들웨어 기반 다국어(한/영) 지원 및 React Query + Intersection Observer 무한 스크롤 구현",
+                  "ISR + React Query 캐싱 전략 조합 및 이미지 Lazy Loading으로 성능 최적화",
+                  "다국어 SEO 최적화 (메타데이터, 구조화된 데이터)",
                 ]}
               />
             </TextBox>
             <TextBox>
               <Text size="sm">
-                ※ 해당 프로젝트는 현재 <LinkText href="https://my-pokemon.web.app/">이곳</LinkText>
+                ※ 해당 프로젝트는 현재{" "}
+                <LinkText href="https://my-pokepedia.pages.dev/en">이곳</LinkText>
                 에서 테스트 가능합니다.
               </Text>
               <Text size="sm">
@@ -381,13 +314,12 @@ export default function Home() {
             <TextBox title="Technical">
               <ChipList
                 list={[
+                  "Next.js",
                   "React",
-                  "Vite",
-                  "React-Query",
-                  "Recoil",
-                  "Tailwind",
                   "TypeScript",
-                  "Firebase",
+                  "React Query",
+                  "Tailwind CSS",
+                  "Cloudflare Pages",
                 ]}
               />
             </TextBox>
@@ -408,17 +340,9 @@ export default function Home() {
               />
             </ImageBox>
             <TextBox>
-              <p>처음 React 를 공부하며 개발한 페이지입니다.</p>
               <p>
-                지식은 나눌때 가장 가치 있는 것이라 믿기 때문에 많은 사람들이 함께 공부했으면
-                좋겠다는 마음으로 개발하게 되었습니다.
-              </p>
-              <p>
-                자세한 설명과 코드 예제는{" "}
-                <LinkText href="https://nychicken.tistory.com/category/React?page=1">
-                  블로그
-                </LinkText>
-                에 업로드 하였습니다.
+                React를 공부하며 개발한 예제 실습 페이지. 블로그와 연계하여 설명과 코드 예제를 함께
+                제공.
               </p>
             </TextBox>
             <TextBox>
@@ -438,38 +362,19 @@ export default function Home() {
             </TextBox>
           </ContentBox>
         </TwoSeperatedBox>
+      </BasicBox>
+
+      {/* 학력 */}
+      <BasicBox>
+        <SubHeader>Education</SubHeader>
         <TwoSeperatedBox>
-          <StickyBox title="Custom Toast Message" subContent="2021/06" />
-          <ContentBox>
-            <ImageBox>
-              <Image
-                src="/images/projects/CustomToastMessage.png"
-                alt="커스텀 토스트 메시지"
-                width={100}
-                height={100}
-                className="flex-1 w-0 min-w-0 object-contain"
-              />
-            </ImageBox>
-
-            <TextBox>
-              <p>Vue.js 를 사용해 개발한 페이지 입니다.</p>
-              <p>
-                사용자 커스텀이 가능한 컴포넌트를 공부하고자 개발하게 되었습니다. 배경색, 노출 위치,
-                시간, 애니메이션, 제목, 메시지의 커스텀이 가능합니다.
-              </p>
-            </TextBox>
-            <TextBox>
-              <Text size="sm">
-                ※ 해당 프로젝트는 현재{" "}
-                <LinkText href="https://mirro97.github.io/CutomToastMessage/">이곳</LinkText>
-                에서 테스트 가능합니다.
-              </Text>
-            </TextBox>
-
-            <TextBox title="Technical">
-              <ChipList list={["Vue"]} />
-            </TextBox>
-          </ContentBox>
+          <Text size="2xl" isBold>
+            강원대학교
+          </Text>
+          <div>
+            <p>컴퓨터 정보통신 공학과</p>
+            <Text size="sm">2016/03 - 2021/03</Text>
+          </div>
         </TwoSeperatedBox>
       </BasicBox>
 
@@ -500,23 +405,8 @@ export default function Home() {
         </TwoSeperatedBox>
       </BasicBox>
 
-      {/* 학력 */}
-      <BasicBox>
-        <SubHeader>Education</SubHeader>
-        <TwoSeperatedBox>
-          <Text size="2xl" isBold>
-            강원대학교
-          </Text>
-          <div>
-            <p>컴퓨터 정보통신 공학과 </p>
-            <Text size="sm">2016/03 - 2021/03</Text>
-          </div>
-        </TwoSeperatedBox>
-      </BasicBox>
-
       {/* footer */}
       <BottomSection>
-        <Text size="sm">Next.js 13.2.4 / React.js 18.2.0 / Tailwind 3.2.7</Text>
         <Text size="sm">Front-End Engineer, sujeong.k</Text>
         <LinkText href="https://github.com/mirro97/my-page">📎 Check Code</LinkText>
       </BottomSection>

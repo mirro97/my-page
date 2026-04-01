@@ -5,5 +5,5 @@ interface ContainerProps {
 }
 
 export default function TopSection({ children }: ContainerProps) {
-  return <div className="py-16 text-left">{children}</div>;
+  return <div className="py-16 text-left mx-auto max-w-[750px]">{children}</div>;
 }

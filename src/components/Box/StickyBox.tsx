@@ -14,7 +14,7 @@ export default function StickyBox({ title, hasTitlePoint, content, subContent }:
       {/* 회전하는 gradient 테두리 — 모바일 only */}
       <div className="siri-glow-border sm:hidden" />
       {/* glass 배경 + 콘텐츠 */}
-      <div className="glass-card p-6 sm:p-0 sm:border-none sm:bg-transparent sm:shadow-none sm:bg-opacity-0 sm:overflow-visible sm:rounded-none">
+      <div className="glass-card p-6 sm:p-0 sm:border-none sm:bg-transparent sm:shadow-none sm:bg-opacity-0 sm:overflow-visible sm:rounded-none sm:backdrop-filter-none">
         <Text size="2xl" isBold className="relative">
           {title}
           {hasTitlePoint && <Point>*</Point>}

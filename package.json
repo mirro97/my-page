@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "next build && firebase deploy --only hosting"
+    "export": "next export"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.13",
@@ -16,7 +15,6 @@
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
-    "firebase": "^9.18.0",
     "next": "^14.2.23",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
